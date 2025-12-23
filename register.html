@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>Account Creation</title>
+  </head>
+<body>
+  <h1>Account Registration</h1>
+  
+  <form action="reguister.php" method="POST">
+    
+    <label for="firstname">First Name:</label>
+    <input type="text" id="firstname" required maxlength="15" placeholder="Charlie">
+    <br>
+    
+    <label for="middlename">Middle Name:</label>
+    <input type="text" id="middlename" name="middlename" placeholder="Ified">
+    <br>
+    
+    <label for="lastname">Last Name:</label>
+    <input type="text" id="lastname" name="lastname" placeholder="Kirk">
+    <br>
+    
+    <label for="bday">Birthdate:</label>
+    <input type="date" id="bday" name="bday">
+    <br>
+    
+    <label for="phone">Phone num:</label>
+    <input tyoe="phone" id="phone" name="phone" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}" placeholder="09XX-XXX-XXXX">
+    <br>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="quandale@gmail.com">
+    <br>
+    
+    <p>Sex:
+    <input type="radio" id="male" name="sex" value="male">
+    <label for="male">Male</label>
+    <input type=radio id="female" name="sex" value="female">
+    <label for="female">Female</label>    
+    </p>
+    
+    <label for="uploadid">Upload ID:</label>
+    <input type="file" id="uploadid" name="uploadid" accept="image/png,image/jpg">
+    <br>
+    
+    <p>
+      Race:
+      <br>
+      <label for="black">Black</label>
+      <input type="checkbox" id="black" name="race" value="black">
+      <br>
+      <label for="asian">Asian</label>
+      <input type="checkbox" id="asian" name="race" value="asian">
+      <br>
+      <label for="alien">Alien</label>
+      <input type="checkbox" id="alien" name="race" value="alien">
+      <br>
+      <label for="dog">Dog</label>
+      <input type="checkbox" id="dog" name="race" value="dog">
+    </p>
+    
+    <p>
+      Do you support the Jews?
+      <input type="checkbox" id="jewyes" name="jewchc" value="yes">
+      <label for="jewyes">Yes</label>
+      <input type="checkbox" id="jewno" name="jewchc" value="no">
+      <label for="jewno">No, and I avoid goyslop</label>
+    </p>
+    
+     
+    <br>
+    <input type="submit" id="submit" value="Register">
+    <input type="reset" id="reset" value="Reset">
+  </form>
+</body>
+</html>
